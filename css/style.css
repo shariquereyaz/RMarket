@@ -183,7 +183,7 @@ label #cancel{
   top: 17px;
   font-size: 30px;
   color: #0a5275;
-  padding: 4px 9px;
+  padding: 1px 9px;
   transition: all .5s ease;
 }
 #check:checked ~ .sidebar{
