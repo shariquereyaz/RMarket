@@ -1,17 +1,26 @@
+// document.querySelector('span#open_menu').addEventListener('click', 
+// function(){
+//    openNav();
+// })
 
+// document.querySelector('#btn').addEventListener('click', 
+// function(){
+//    closeNav();
+// })
 
-// $('body').on('click', function(){
-// //   if( parseInt( $('.sidebar').css('width') ) > 0 ){
-//     closeNav();
-// //   }
-// });
+// function openNav() {
+//     document.getElementById("sidebar").style.width = "230px";
+//     document.getElementById("main").style.marginLeft = "250px";
+//     }
 
+// /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 // function closeNav() {
-//     // document.getElementById("sidebar").style.width = "0";
-//     // document.getElementsByClassName('sidebar')[0].style.visibility = 'hidden';
-//     document.getElementsByClassName('sidebar')[0].style.display = 'none';
-// }
+//     document.getElementById("sidebar").style.width = "0";
+//     document.getElementById("main").style.marginLeft = "0";
+//     }
 
-// function openNav(){
-//     document.getElementsByClassName('sidebar')[0].style.display='block';
-// }
+$(document).click(function(e) {
+	if (!$(e.target).is('#main')) {
+    	$('.sidebar').collapse('hide');	    
+    }
+});
