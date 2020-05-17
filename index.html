@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleProduct.css">
     <link rel="icon" href="images/icon-72x72.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='manifest' href='/manifest.json'>
     <title>FTM</title>
   </head>
   <body>
@@ -49,8 +51,8 @@
             <div class="product-grid">
                 <div class="product-image">
                     <a href="#">
-                        <img class="pic-1" style="height: 245px;width: 245px;" src="images/products/brinjal1.jpeg">
-                        <img class="pic-2"  style="height: 245px;width: 245px;" src="images/products/brinjal2.jpeg">
+                        <img class="pic-1" style="height: 245px;width: 245px;" src="images/products/brinjal2.jpeg">
+                        <img class="pic-2"  style="height: 245px;width: 245px;" src="images/products/brinjal1.jpeg">
                     </a>
                     <ul class="social">
                         <!-- <li><a href="" data-tip="Quick View"><i class="fa fa-search"></i></a></li> -->
@@ -104,7 +106,17 @@
 </section>
  
 </div>
-    
+<script type="module">
+    // This is the "Offline copy of pages" service worker
+
+// Add this below content to your HTML page inside a <script type="module">tag, or add the js file to your page at the very top to register service worker
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
